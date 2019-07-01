@@ -1,0 +1,7 @@
+<h1>Contact Us And Enquiry</h1>
+<hr>
+<form name="form" action="" method="post">
+	{% csrf_token %}
+	{{ form.as_p}}
+	<button type="submit">Submit</button>
+</form>

@@ -1,0 +1,16 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/mystyle.css' %}">
+<html>
+<head>
+	<title>Python friends website-person information</title>
+</head>
+<body>
+	<img src="/media/banner.jpg" width="100%">
+	<h2 style="text-align: right;">
+		<a href="/contact">Contact Us</a><br>
+	</h2>
+	{% for p in mylist %}
+	<a href="/info/{{p.id}}">{{p.name}}</a><br>
+	{% endfor %}
+</body>
+</html>
